@@ -1,0 +1,24 @@
+# Arquivos de compilação
+*.o
+*.out
+*.a
+*.so
+*.exe
+
+# Diretórios de build
+/build/
+bin/
+obj/
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de backup de editores
+*~
+*.swp
+

@@ -43,22 +43,21 @@ int main() {
         int won = 0;
 
         for (int attempt = 1; attempt <= maxAttempts; attempt++) {
-            printf("(For trial version only) the secret number is %d", secretNumber);
             printf("\nAttempt %d of %d. Enter your guess: ", attempt, maxAttempts);
             scanf("%d", &guess);
 
             if (guess < 1 || guess > 100) {
-                printf("Invalid value. Please enter a number between 1 and 100.\n");
+                printf("Invalid value. Please enter a number between 1 and 100.\n\n");
                 attempt--;
                 continue;
             }
 
             if (guess > secretNumber) {
-                printf("Too high! Try a smaller number.\n");
+                printf("Too high! Try a smaller number.\n\n");
             } else if (guess < secretNumber) {
-                printf("Too low! Try a larger number.\n");
+                printf("Too low! Try a larger number.\n\n");
             } else {
-                printf("Congratulations! You guessed the number!\n");
+                printf("Congratulations! You guessed the number!\n\n");
                 won = 1;
                 break;
             }
